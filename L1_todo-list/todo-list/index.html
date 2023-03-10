@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo list</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrapper">
+  <form class="controls">
+    <fieldset class="fieldset">
+      <legend>Note:</legend>
+      <input type="text">
+    </fieldset>
+    <button id="add_btn" class="btn" type="button">Add</button>
+  </form>
+  <section class="output">
+    <ul class="output-list">
+      <li class="output-list-item">
+        <input name="todo-state" type="checkbox">
+        <span class="content">Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+        <button class="remove-btn"></button>
+      </li>
+      <li class="output-list-item">
+        <input name="todo-state" type="checkbox" checked>
+        <span class="content done">Lorem ipsum dolor sit amet</span>
+        <button class="remove-btn"></button>
+      </li>
+    </ul>
+  </section>
+</div>
+
+<template id="list-item">
+  <li class="output-list-item">
+    <input type="checkbox" name="todo-state">
+    <!--  add class done when the input[type=checkbox] is checked  -->
+    <span class="content done">Lorem ipsum dolor sit amet</span>
+    <button class="remove-btn"></button>
+  </li>
+</template>
+
+<script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shapes list</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrapper">
+  <form class="controls">
+
+    <fieldset class="fieldset">
+      <legend>Shapes:</legend>
+      <label>
+        <input id="radio_circle" type="radio" name="shape" value="circle" checked>
+        Circle
+      </label>
+      <label>
+        <input id="radio_square" type="radio" name="shape" value="square">
+        Square
+      </label>
+    </fieldset>
+
+    <fieldset class="fieldset">
+      <legend>Color:</legend>
+        <select name="color" id="select">
+          <option value="red" selected>Red</option>
+          <option value="orange">Orange</option>
+          <option value="green">Green</option>
+        </select>
+    </fieldset>
+
+    <button class="btn" id="btn_add" type="button">Add</button>
+
+  </form>
+  <section class="output">
+    <ul class="output-list" id="output"></ul>
+  </section>
+</div>
+
+<script src="./main.js"></script>
+</body>
+</html>

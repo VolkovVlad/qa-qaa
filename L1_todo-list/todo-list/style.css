@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+}
+
+.controls {
+    display: flex;
+    align-items: baseline;
+
+    max-width: 420px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.fieldset {
+    border-radius: 6px;
+    border: 1px solid #d6d6d6;
+}
+
+
+.fieldset legend {
+    font-size: 12px;
+}
+
+.controls .btn {
+    margin-left: 10px;
+}
+
+.btn {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    background: #4baede;
+    color: #fff;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #1c99c2;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+.output-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 440px;
+    margin: 0 auto;
+    padding: 10px;
+
+    border: 1px dashed lightblue;
+    border-radius: 6px;
+}
+
+.output-list-item {
+    position: relative;
+    border-radius: 6px;
+    margin: 5px;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.red {
+    background: #d94d4d;
+}
+
+.orange {
+    background: #e57d3b;
+}
+
+.green {
+    background: #3be590;
+}
+
+.remove-btn {
+    font-size: 0;
+    height: 18px;
+    width: 18px;
+    border: none;
+    background: none;
+    background: url('./assets/cross.png') 50% 50% no-repeat;
+    background-size: contain;
+    border-radius: 4px;
+
+    opacity: 0.6;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    opacity: 1;
+}
+
+.done {
+    text-decoration: line-through;;
+}
